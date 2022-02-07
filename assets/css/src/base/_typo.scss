@@ -1,0 +1,52 @@
+@include font-face(
+  dotmovistar,
+  "#{$font-path}/dotmovistar-font",
+  null,
+  normal,
+  eot svg ttf woff
+);
+
+@include font-face(
+  TelefonicaWeb,
+  "#{$font-path}/TelefonicaWeb-ExtraLight",
+  100,
+  normal,
+  eot svg woff woff2
+);
+
+@include font-face(
+  TelefonicaWeb,
+  "#{$font-path}/TelefonicaWeb-Light",
+  200,
+  normal,
+  eot svg woff woff2
+);
+
+@include font-face(
+  TelefonicaWeb,
+  "#{$font-path}/TelefonicaWeb-Regular",
+  400,
+  normal,
+  eot svg woff woff2
+);
+
+@include font-face(icomoon, "#{$font-path}/icomoon", null, normal, ttf);
+
+// Icons -typo - Class
+.iconmv {
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+
+  &-eye-slash::before {
+    content: "\e903";
+  }
+
+  &-chat-float::before {
+    content: "\e904";
+  }
+}
